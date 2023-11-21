@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Webpage</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 24px;
+            padding: 50px;
+            background-color: #bbbbbb;
+        }
+
+        .menu-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .menu-line .logo {
+            font-size: 24px;
+        }
+
+        .menu-line nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-line nav ul li {
+            margin-right: 20px;
+        }
+
+        .menu-line nav ul li:last-child { 
+            margin-right: 0px;
+        }
+
+        .menu-line nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230612/pngtree-photos-of-nike-ball-with-rain-on-it-image_2952081.jpg');
+            background-size: cover;
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 62px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #fcfcfc;
+        }
+
+        .alternate-section {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff; /* Set background color for alternate section */
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .alternate-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .alternate-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .alternate-image {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .alternate-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .alternate-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .alternate-h2 {
+            font-size: 24px;
+        }
+
+        .alternate-p {
+            font-size: 16px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin-top: 50px;
+            background-color: #ffffff; /* Set background color for options section */
+            padding: 20px;
+        }
+
+        .options h2 {
+            align-self: center;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .options h3 {
+            align-self: center;
+            font-size: 30px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 50px;
+        }
+
+        .option.reverse {
+            flex-direction: row-reverse;
+            background-color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-hidden {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu-line">
+        <div class="logo">KADAM</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Online Shoes Shop</h1>
+            <p>Your journey begins with every step you take. Choose the perfect shoes for confident and stylish strides.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="page" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to KADAM, your ultimate online destination for quality footwear. With a diverse collection sourced from different countries and brands, we merge style and durability. Shop conveniently from the comfort of your home, workplace, or while on the go.</p>
+    </section>
+
+    <section class="page" id="contact">
+        <h2>Contact Us</h2>
+        <p>For further details on your orders or any inquiries, feel free to get in touch with us. Our customer service is available around the clock to assist you.</p>
+        <p>Call us anytime at: +996 123 456 789</p>
+    </section>
+
+    <section class="options">
+        <h2>Choose the Perfect Shoes for You and Your Family!</h2>
+        <div class="option">
+            <img src="https://www.jordan-official.us.com/wp-content/uploads/2023/05/jordan-air-jordan-4-retro-thunder-2023_19830660_45179512_2048-300x300.jpg" alt="Men's Shoes Image">
+            <h3>Men's Shoes</h3>
+            <p>$145</p>
+            <p>Explore our collection of men's shoes and pick the perfect size and color for your order.</p>
+        </div>
+
+        <div class="option reverse">
+            <img src="https://www.jordan-official.us.com/wp-content/uploads/2023/05/CT8012-116_1-300x300.jpg" alt="Women's Shoes Image">
+            <div>
+                <h3>Women's Shoes</h3>
+                <p>$150</p>
+                <p>Discover elegant and comfortable women's shoes for various occasions and different models.</p>
+            </div>
+        </div>
+
+        <div class="option">
+            <img src="https://www.jordan-official.us.com/wp-content/uploads/2023/05/4408921002-1000x1000-1-300x300.jpg" alt="Kid's Shoes Image">
+            <div>
+                <h3>Kid's Shoes</h3>
+                <p>$145</p>
+                <p>Give your little ones the joy of taking their first steps with our adorable collection of kid's shoes.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="site-footer">
+        <p>&copy; 2023 KADAM.com. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/yourpage" target="_blank"><img src="https://q-media.ru/images/2021/10/27/1576058917-facebooklogo.jpg" alt="Facebook" style="width: 30px; height: 30px;"></a>
+            <a href="https://instagram.com/yourusername" target="_blank"><img src="https://avatars.mds.yandex.net/i?id=ff3558841d54e3766cb612b3b84644e1274ab13f-11386386-images-thumbs&n=13" alt="Instagram" style="width: 30px; height: 30px;"></a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('site-footer');
+            if (window.scrollY > 100) {
+                footer.classList.add('footer-hidden');
+            } else {
+                footer.classList.remove('footer-hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
